@@ -6,12 +6,12 @@ import static scontente.core.DriverFactory.killDriver;
 import org.junit.Assert;
 
 import io.cucumber.java.pt.*;
-import scontente.core.BaseTest;
+
 import scontente.page.AccountPage;
 import scontente.page.IndexPage;
 import scontente.page.LoginPage;
 
-public class LoginSteps extends BaseTest{
+public class LoginSteps {
     private IndexPage index;
     private LoginPage login;
     private AccountPage account;
