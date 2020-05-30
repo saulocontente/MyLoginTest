@@ -21,50 +21,44 @@ public class LoginSteps {
     private IndexPage index = new IndexPage();
     private LoginPage login = new LoginPage();
     private AccountPage account = new AccountPage();
+    private String usuario;
 
-    @Dado("^que estou na pagina inicial$")
+    @Dado("que estou na pagina inicial")
     public void queEstouNaPaginaInicial() {
        index.abrirPaginaIndex();
     }
     
-    @Quando("^clickar no botao sign in$")
-    public void clickNoBotaoSignIn() {
+    @E("acessei o login")
+    public void acesseiOLogIn() {
         index.clickarBotaoLogin();
-    }
-    
-    @Entao("^visualizo a pagina de sign in$")
-    public void visualizoAPaginaDeSignIn() {
         Assert.assertTrue(login.buscaAutenticacao());
     }
-    
-    @Quando("^informo o email: (.+)$")
-    public void informoOEmail(String texto) {
-        login.entrarConta(texto);
-    }
 
-    @Quando("^informo a senha: (.+)$")
-    public void informoASenha(String texto) {
-        login.entrarSenha(texto);
-    }
-
-    @Quando("^clickar no botao Sign In$")
-    public void clickarNoBotaoSignIn() {
+    @Quando("informar uma conta valida")
+    public void informarUmaContaValida() {
+        String email = "contente.saulo@gmail.com";
+        String senha = "AmeDesafios";
+        usuario = "Saulo Contente";
+        login.entrarConta(email);
+        login.entrarSenha(senha);
         login.efetuarLogin();
     }
 
-    @Entao("^Login sera efetuado com Sucesso na conta de (.+)$")
-    public void loginSeraEfetuadoComSucessoNaContaDe(String usuario) {
+    @Entao("login sera efetuado com Sucesso na conta informada")
+    public void loginSeraEfetuadoComSucessoNaContaInformada() {
         Assert.assertEquals(usuario, account.confereContaLogada());
     }
 
-    @Entao("^Devera exibir o erro: (.+)$")
-    public void deveraExibirOErroAuthenticantionFailed(String erro) {
-        Assert.assertEquals(erro, login.erroLoginInvalido());
+    @Quando("informar {string} e {string} invalidos")
+    public void informarInvalidos(String email, String senha) {
+        login.entrarConta(email);
+        login.entrarSenha(senha);
+        login.efetuarLogin();
     }
 
-    @Before
-    public void sairLogin() {
-        index.abrirPaginaIndex();
+    @Entao("devo receber o erro: {string}")
+    public void deveraExibirOErroAuthenticantionFailed(String erro) {
+        Assert.assertEquals(erro, login.erroLoginInvalido());
     }
 
     @Before

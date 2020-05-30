@@ -4,13 +4,10 @@ formatter.feature({
   "description": "Como um usuario \nQuero poder inserir os dados \nPara registrar meu cadastro \ne efetuar login na aplicacao",
   "keyword": "Funcionalidade"
 });
-formatter.scenario({
-  "name": "Login Sucesso (se caso utilizar o login do cadastro, será um diferencial/plus).",
+formatter.background({
+  "name": "Ir para Login",
   "description": "",
-  "keyword": "Cenario"
-});
-formatter.before({
-  "status": "passed"
+  "keyword": "Contexto"
 });
 formatter.before({
   "status": "passed"
@@ -26,61 +23,36 @@ formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "clickar no botao sign in",
-  "keyword": "Quando "
-});
-formatter.match({
-  "location": "scontente.features.steps_definition.LoginSteps.clickNoBotaoSignIn()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "visualizo a pagina de sign in",
-  "keyword": "Entao "
-});
-formatter.match({
-  "location": "scontente.features.steps_definition.LoginSteps.visualizoAPaginaDeSignIn()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "informo o email: contente.saulo@gmail.com",
-  "keyword": "Quando "
-});
-formatter.match({
-  "location": "scontente.features.steps_definition.LoginSteps.informoOEmail(java.lang.String)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "informo a senha: AmeDesafios",
+  "name": "acessei o login",
   "keyword": "E "
 });
 formatter.match({
-  "location": "scontente.features.steps_definition.LoginSteps.informoASenha(java.lang.String)"
+  "location": "scontente.features.steps_definition.LoginSteps.acesseiOLogIn()"
 });
 formatter.result({
   "status": "passed"
 });
+formatter.scenario({
+  "name": "Login Sucesso",
+  "description": "",
+  "keyword": "Cenario"
+});
 formatter.step({
-  "name": "clickar no botao Sign In",
-  "keyword": "E "
+  "name": "informar uma conta valida",
+  "keyword": "Quando "
 });
 formatter.match({
-  "location": "scontente.features.steps_definition.LoginSteps.clickarNoBotaoSignIn()"
+  "location": "scontente.features.steps_definition.LoginSteps.informarUmaContaValida()"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "Login sera efetuado com Sucesso na conta de Saulo Contente",
+  "name": "login sera efetuado com Sucesso na conta informada",
   "keyword": "Entao "
 });
 formatter.match({
-  "location": "scontente.features.steps_definition.LoginSteps.loginSeraEfetuadoComSucessoNaContaDe(java.lang.String)"
+  "location": "scontente.features.steps_definition.LoginSteps.loginSeraEfetuadoComSucessoNaContaInformada()"
 });
 formatter.result({
   "status": "passed"
@@ -88,13 +60,51 @@ formatter.result({
 formatter.after({
   "status": "passed"
 });
-formatter.scenario({
-  "name": "Login Inválido.",
+formatter.scenarioOutline({
+  "name": "Validar Regras de Login",
   "description": "",
-  "keyword": "Cenario"
+  "keyword": "Esquema do Cenario"
 });
-formatter.before({
-  "status": "passed"
+formatter.step({
+  "name": "informar \u0027\u003cemail\u003e\u0027 e \u0027\u003csenha\u003e\u0027 invalidos",
+  "keyword": "Quando "
+});
+formatter.step({
+  "name": "devo receber o erro: \u0027\u003cmsg\u003e\u0027",
+  "keyword": "Entao "
+});
+formatter.examples({
+  "name": "",
+  "description": "",
+  "keyword": "Exemplos",
+  "rows": [
+    {
+      "cells": [
+        "email",
+        "senha",
+        "msg"
+      ]
+    },
+    {
+      "cells": [
+        "contentesaulo@gmail.com",
+        "AmeDesafio",
+        "Authentication failed."
+      ]
+    },
+    {
+      "cells": [
+        "",
+        "",
+        "An email address required."
+      ]
+    }
+  ]
+});
+formatter.background({
+  "name": "Ir para Login",
+  "description": "",
+  "keyword": "Contexto"
 });
 formatter.before({
   "status": "passed"
@@ -110,57 +120,32 @@ formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "clickar no botao sign in",
-  "keyword": "Quando "
-});
-formatter.match({
-  "location": "scontente.features.steps_definition.LoginSteps.clickNoBotaoSignIn()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "visualizo a pagina de sign in",
-  "keyword": "Entao "
-});
-formatter.match({
-  "location": "scontente.features.steps_definition.LoginSteps.visualizoAPaginaDeSignIn()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "informo o email: contentesaulo@gmail.com",
-  "keyword": "Quando "
-});
-formatter.match({
-  "location": "scontente.features.steps_definition.LoginSteps.informoOEmail(java.lang.String)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "informo a senha: AmeDesafio",
+  "name": "acessei o login",
   "keyword": "E "
 });
 formatter.match({
-  "location": "scontente.features.steps_definition.LoginSteps.informoASenha(java.lang.String)"
+  "location": "scontente.features.steps_definition.LoginSteps.acesseiOLogIn()"
 });
 formatter.result({
   "status": "passed"
 });
+formatter.scenario({
+  "name": "Validar Regras de Login",
+  "description": "",
+  "keyword": "Esquema do Cenario"
+});
 formatter.step({
-  "name": "clickar no botao Sign In",
-  "keyword": "E "
+  "name": "informar \u0027contentesaulo@gmail.com\u0027 e \u0027AmeDesafio\u0027 invalidos",
+  "keyword": "Quando "
 });
 formatter.match({
-  "location": "scontente.features.steps_definition.LoginSteps.clickarNoBotaoSignIn()"
+  "location": "scontente.features.steps_definition.LoginSteps.informarInvalidos(java.lang.String,java.lang.String)"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "Devera exibir o erro: Authentication failed.",
+  "name": "devo receber o erro: \u0027Authentication failed.\u0027",
   "keyword": "Entao "
 });
 formatter.match({
@@ -172,13 +157,10 @@ formatter.result({
 formatter.after({
   "status": "passed"
 });
-formatter.scenario({
-  "name": "Login em Branco",
+formatter.background({
+  "name": "Ir para Login",
   "description": "",
-  "keyword": "Cenario"
-});
-formatter.before({
-  "status": "passed"
+  "keyword": "Contexto"
 });
 formatter.before({
   "status": "passed"
@@ -194,37 +176,32 @@ formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "clickar no botao sign in",
+  "name": "acessei o login",
+  "keyword": "E "
+});
+formatter.match({
+  "location": "scontente.features.steps_definition.LoginSteps.acesseiOLogIn()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.scenario({
+  "name": "Validar Regras de Login",
+  "description": "",
+  "keyword": "Esquema do Cenario"
+});
+formatter.step({
+  "name": "informar \u0027\u0027 e \u0027\u0027 invalidos",
   "keyword": "Quando "
 });
 formatter.match({
-  "location": "scontente.features.steps_definition.LoginSteps.clickNoBotaoSignIn()"
+  "location": "scontente.features.steps_definition.LoginSteps.informarInvalidos(java.lang.String,java.lang.String)"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "visualizo a pagina de sign in",
-  "keyword": "Entao "
-});
-formatter.match({
-  "location": "scontente.features.steps_definition.LoginSteps.visualizoAPaginaDeSignIn()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "clickar no botao Sign In",
-  "keyword": "Quando "
-});
-formatter.match({
-  "location": "scontente.features.steps_definition.LoginSteps.clickarNoBotaoSignIn()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "Devera exibir o erro: An email address required.",
+  "name": "devo receber o erro: \u0027An email address required.\u0027",
   "keyword": "Entao "
 });
 formatter.match({
