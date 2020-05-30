@@ -6,21 +6,25 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 public class DriverFactory {
 	private static WebDriver driver;
-	
-	private DriverFactory() {	}
 
-	public static WebDriver getDriver() {
+	public static WebDriver startDriver() {
 		if(driver == null) {
 			driver = new ChromeDriver();
-		    driver.manage().window().setSize(new Dimension(1063, 1049));
 		}
 		return driver;
 	}
-	
+
+	public static void maximizarDriver() {
+		if(driver != null) {
+		  driver.manage().window().maximize();
+		}
+	}
+
 	public static void killDriver() {
 		if(driver != null) {
 				driver.quit();
 				driver = null;
 		}
 	}
+	
 }

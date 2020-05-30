@@ -9,6 +9,12 @@ formatter.scenario({
   "description": "",
   "keyword": "Cenario"
 });
+formatter.before({
+  "status": "passed"
+});
+formatter.before({
+  "status": "passed"
+});
 formatter.step({
   "name": "que estou na pagina inicial",
   "keyword": "Dado "
@@ -79,10 +85,19 @@ formatter.match({
 formatter.result({
   "status": "passed"
 });
+formatter.after({
+  "status": "passed"
+});
 formatter.scenario({
   "name": "Login Inválido.",
   "description": "",
   "keyword": "Cenario"
+});
+formatter.before({
+  "status": "passed"
+});
+formatter.before({
+  "status": "passed"
 });
 formatter.step({
   "name": "que estou na pagina inicial",
@@ -154,10 +169,19 @@ formatter.match({
 formatter.result({
   "status": "passed"
 });
+formatter.after({
+  "status": "passed"
+});
 formatter.scenario({
   "name": "Login em Branco",
   "description": "",
   "keyword": "Cenario"
+});
+formatter.before({
+  "status": "passed"
+});
+formatter.before({
+  "status": "passed"
 });
 formatter.step({
   "name": "que estou na pagina inicial",
@@ -207,6 +231,9 @@ formatter.match({
   "location": "scontente.features.steps_definition.LoginSteps.deveraExibirOErroAuthenticantionFailed(java.lang.String)"
 });
 formatter.result({
+  "status": "passed"
+});
+formatter.after({
   "status": "passed"
 });
 });

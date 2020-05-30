@@ -1,0 +1,8 @@
+scontente\page\LoginPage.class
+scontente\page\IndexPage.class
+scontente\runners\RunnerTest.class
+scontente\core\BasePage.class
+scontente\page\AccountPage.class
+scontente\core\DSL.class
+scontente\features\steps_definition\LoginSteps.class
+scontente\core\DriverFactory.class
