@@ -1,16 +1,12 @@
 package scontente.features.steps_definition;
 
-import static scontente.core.DriverFactory.startDriver;
-import static scontente.core.DriverFactory.killDriver;
-
 import io.cucumber.java.After;
 import io.cucumber.java.Before;
-import org.junit.AfterClass;
+import io.cucumber.java.pt.Dado;
+import io.cucumber.java.pt.E;
+import io.cucumber.java.pt.Entao;
+import io.cucumber.java.pt.Quando;
 import org.junit.Assert;
-
-import io.cucumber.java.pt.*;
-
-import org.junit.BeforeClass;
 import scontente.core.DriverFactory;
 import scontente.page.AccountPage;
 import scontente.page.IndexPage;
@@ -71,4 +67,5 @@ public class LoginSteps {
     public void finalizarDriver() {
         DriverFactory.killDriver();
     }
+
 }

@@ -1,14 +1,9 @@
 package scontente.runners;
 
-import org.junit.AfterClass;
-import org.junit.BeforeClass;
-import org.junit.runner.RunWith;
-
 import io.cucumber.junit.Cucumber;
 import io.cucumber.junit.CucumberOptions;
 import io.cucumber.junit.CucumberOptions.SnippetType;
-import org.openqa.selenium.WebDriver;
-import scontente.core.DriverFactory;
+import org.junit.runner.RunWith;
 
 
 @RunWith(Cucumber.class)

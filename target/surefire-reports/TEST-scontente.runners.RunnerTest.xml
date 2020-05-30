@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="scontente.runners.RunnerTest" time="53.359" tests="3" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="scontente.runners.RunnerTest" time="44.614" tests="3" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="14"/>
     <property name="sun.cpu.isalist" value="amd64"/>
@@ -15,7 +15,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="BR"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-14\bin"/>
-    <property name="sun.java.command" value="C:\Users\saulo\AppData\Local\Temp\surefire1959032009860380220\surefirebooter10152550212456397676.jar C:\Users\saulo\AppData\Local\Temp\surefire1959032009860380220 2020-05-29T20-45-57_652-jvmRun1 surefire2904434875484417132tmp surefire_07164059657078734026tmp"/>
+    <property name="sun.java.command" value="C:\Users\saulo\AppData\Local\Temp\surefire12373691899001333496\surefirebooter17089738941510463557.jar C:\Users\saulo\AppData\Local\Temp\surefire12373691899001333496 2020-05-30T18-27-48_447-jvmRun1 surefire5250470018161781614tmp surefire_01083928642922808977tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="C:\Users\saulo\git\MyLoginTest\target\test-classes;C:\Users\saulo\git\MyLoginTest\target\classes;C:\Users\saulo\.m2\repository\org\seleniumhq\selenium\selenium-java\3.141.59\selenium-java-3.141.59.jar;C:\Users\saulo\.m2\repository\org\seleniumhq\selenium\selenium-api\3.141.59\selenium-api-3.141.59.jar;C:\Users\saulo\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\3.141.59\selenium-chrome-driver-3.141.59.jar;C:\Users\saulo\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\3.141.59\selenium-edge-driver-3.141.59.jar;C:\Users\saulo\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\3.141.59\selenium-firefox-driver-3.141.59.jar;C:\Users\saulo\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\3.141.59\selenium-ie-driver-3.141.59.jar;C:\Users\saulo\.m2\repository\org\seleniumhq\selenium\selenium-opera-driver\3.141.59\selenium-opera-driver-3.141.59.jar;C:\Users\saulo\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\3.141.59\selenium-remote-driver-3.141.59.jar;C:\Users\saulo\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\3.141.59\selenium-safari-driver-3.141.59.jar;C:\Users\saulo\.m2\repository\org\seleniumhq\selenium\selenium-support\3.141.59\selenium-support-3.141.59.jar;C:\Users\saulo\.m2\repository\net\bytebuddy\byte-buddy\1.8.15\byte-buddy-1.8.15.jar;C:\Users\saulo\.m2\repository\org\apache\commons\commons-exec\1.3\commons-exec-1.3.jar;C:\Users\saulo\.m2\repository\com\google\guava\guava\25.0-jre\guava-25.0-jre.jar;C:\Users\saulo\.m2\repository\com\google\code\findbugs\jsr305\1.3.9\jsr305-1.3.9.jar;C:\Users\saulo\.m2\repository\org\checkerframework\checker-compat-qual\2.0.0\checker-compat-qual-2.0.0.jar;C:\Users\saulo\.m2\repository\com\google\errorprone\error_prone_annotations\2.1.3\error_prone_annotations-2.1.3.jar;C:\Users\saulo\.m2\repository\com\google\j2objc\j2objc-annotations\1.1\j2objc-annotations-1.1.jar;C:\Users\saulo\.m2\repository\org\codehaus\mojo\animal-sniffer-annotations\1.14\animal-sniffer-annotations-1.14.jar;C:\Users\saulo\.m2\repository\com\squareup\okhttp3\okhttp\3.11.0\okhttp-3.11.0.jar;C:\Users\saulo\.m2\repository\com\squareup\okio\okio\1.14.0\okio-1.14.0.jar;C:\Users\saulo\.m2\repository\junit\junit\4.11\junit-4.11.jar;C:\Users\saulo\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\saulo\.m2\repository\io\cucumber\cucumber-junit\5.5.0\cucumber-junit-5.5.0.jar;C:\Users\saulo\.m2\repository\org\apiguardian\apiguardian-api\1.1.0\apiguardian-api-1.1.0.jar;C:\Users\saulo\.m2\repository\io\cucumber\cucumber-core\5.5.0\cucumber-core-5.5.0.jar;C:\Users\saulo\.m2\repository\io\cucumber\cucumber-gherkin\5.5.0\cucumber-gherkin-5.5.0.jar;C:\Users\saulo\.m2\repository\io\cucumber\cucumber-gherkin-vintage\5.5.0\cucumber-gherkin-vintage-5.5.0.jar;C:\Users\saulo\.m2\repository\io\cucumber\tag-expressions\2.0.4\tag-expressions-2.0.4.jar;C:\Users\saulo\.m2\repository\io\cucumber\cucumber-expressions\8.3.1\cucumber-expressions-8.3.1.jar;C:\Users\saulo\.m2\repository\io\cucumber\datatable\3.3.0\datatable-3.3.0.jar;C:\Users\saulo\.m2\repository\io\cucumber\cucumber-plugin\5.5.0\cucumber-plugin-5.5.0.jar;C:\Users\saulo\.m2\repository\io\cucumber\docstring\5.5.0\docstring-5.5.0.jar;C:\Users\saulo\.m2\repository\io\cucumber\cucumber-java\5.5.0\cucumber-java-5.5.0.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -30,7 +30,7 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="surefire.real.class.path" value="C:\Users\saulo\AppData\Local\Temp\surefire1959032009860380220\surefirebooter10152550212456397676.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\saulo\AppData\Local\Temp\surefire12373691899001333496\surefirebooter17089738941510463557.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="14+36-1461"/>
@@ -55,7 +55,7 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="58.0"/>
   </properties>
-  <testcase name="Login Sucesso (se caso utilizar o login do cadastro, será um diferencial/plus)." classname="login de usuario" time="19.597"/>
-  <testcase name="Login Inválido." classname="login de usuario" time="17.851"/>
-  <testcase name="Login em Branco" classname="login de usuario" time="14.958"/>
+  <testcase name="Login Sucesso" classname="login de usuario" time="15.682"/>
+  <testcase name="Validar Regras de Login" classname="login de usuario" time="14.022"/>
+  <testcase name="Validar Regras de Login" classname="login de usuario" time="14.351"/>
 </testsuite>
